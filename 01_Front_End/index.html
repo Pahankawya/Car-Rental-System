@@ -1,802 +1,561 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <title>Car Rental</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta charset="UTF-8">
+    <title>Easy_Car_Rental_Website</title>
+<!--    <meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assests/normalize.css">
+    <link rel="stylesheet" href="assests/css/bootstrap.css">
 
+    <link rel="stylesheet" href="assests/styles/style.css">
 
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
-
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Rubik&display=swap" rel="stylesheet"> 
-
-    <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
-
-    <!-- Libraries Stylesheet -->
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
-
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
 </head>
-
 <body>
-    <!-- Topbar Start -->
-    <div class="container-fluid bg-dark py-3 px-lg-5 d-none d-lg-block">
-        <div class="row">
-            <div class="col-md-6 text-center text-lg-left mb-2 mb-lg-0">
-                <div class="d-inline-flex align-items-center">
-                    <a class="text-body pr-3" href=""><i class="fa fa-phone-alt mr-2"></i>+012 345 6789</a>
-                    <span class="text-body">|</span>
-                    <a class="text-body px-3" href=""><i class="fa fa-envelope mr-2"></i>info@example.com</a>
+
+
+    <header class="header">
+        <a href="#" class="logo">.....</a>
+
+
+        <nav class="navbar">
+            <a href="#" style="--i:1;" class="active">Home</a>
+<!--            <a href="#" style="&#45;&#45;i:2;">Cars <i class="fas fa-caret-down"></i></a>-->
+            <li><a href="#" style="--i:2;">Cars <i class="fas fa-caret-down"></i></a>
+
+                <div class="dropdown__menu">
+                    <ul>
+                        <li><a href="#CarType1">General Cars</a></li>
+                        <li><a href="#CarType2">Premium Cars</a></li>
+                        <li><a href="#CarType3">Luxury Cars</a></li>
+                    </ul>
                 </div>
-            </div>
-            <div class="col-md-6 text-center text-lg-right">
-                <div class="d-inline-flex align-items-center">
-                    <a class="text-body px-3" href="">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a class="text-body px-3" href="">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a class="text-body px-3" href="">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a class="text-body px-3" href="">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a class="text-body pl-3" href="">
-                        <i class="fab fa-youtube"></i>
-                    </a>
-                </div>
+            </li>
+
+            <a href="#" style="--i:3;">Admin</a>
+            <a href="#" style="--i:4;">Driver</a>
+            <a href="loginPage.html" style="--i:5;">Login</a>
+            <a href="#" style="--i:6;">Register</a>
+        </nav>
+
+        <div class="social-media">
+            <a href="#" style="--i:1;"><i class='bx bxl-facebook'></i></a>
+            <a href="#" style="--i:2;"><i class='bx bxl-whatsapp-square'></i></a>
+            <a href="#" style="--i:3;"><i class='bx bxl-instagram-alt'></i></a>
+        </div>
+
+    </header>
+
+    <section class="home">
+        <div class="logoc">
+            <img src="assests/pic_vid/pic/LogoCar.png" alt="">
+        </div>
+
+        <div class="home-content">
+            <h1>WELCOME</h1>
+<!--            <h3>EASY CAR RENTAL</h3>-->
+            <h3><span>E</span>ASY <span>C</span>AR <span>R</span>ENTAL</h3>
+      <!--      <video src="assests/pic_vid/videos/particles.mp4" muted="" autoplay=""></video>
+            <h3><span>E</span>ASY CAR <span>REN</span>TAL</h3>-->
+
+<!--            <a href="#" class="btn">Explore Cars</a>-->
+        </div>
+
+        <div class="home-img">
+            <div class="rhombus">
+                <img src="assests/pic_vid/pic/car.png" alt="">
             </div>
         </div>
-    </div>
-    <!-- Topbar End -->
 
+        <div class="rhombus2">
 
-    <!-- Navbar Start -->
-    <div class="container-fluid position-relative nav-bar p-0">
-        <div class="position-relative px-lg-5" style="z-index: 9;">
-            <nav class="navbar navbar-expand-lg bg-secondary navbar-dark py-3 py-lg-0 pl-3 pl-lg-5">
-                <a href="" class="navbar-brand">
-                    <h1 class="text-uppercase text-primary mb-1">Royal Cars</h1>
-                </a>
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
-                    <div class="navbar-nav ml-auto py-0">
-                        <a href="index.html" class="nav-item nav-link active">Home</a>
-                        <a href="assets/es%20HTML/about.html" class="nav-item nav-link">About</a>
-                        <a href="assets/es%20HTML/service.html" class="nav-item nav-link">Service</a>
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Cars</a>
-                            <div class="dropdown-menu rounded-0 m-0">
-                                <a href="assets/es%20HTML/car.html" class="dropdown-item">Car Listing</a>
-                                <a href="assets/es%20HTML/detail.html" class="dropdown-item">Car Detail</a>
-                                <a href="assets/es%20HTML/booking.html" class="dropdown-item">Car Booking</a>
-                            </div>
-                        </div>
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
-                            <div class="dropdown-menu rounded-0 m-0">
-                                <a href="assets/es%20HTML/team.html" class="dropdown-item">The Team</a>
-                                <a href="assets/es%20HTML/testimonial.html" class="dropdown-item">Testimonial</a>
-                            </div>
-                        </div>
-                        <a href="assets/es%20HTML/contact.html" class="nav-item nav-link">Contact</a>
-                    </div>
-                </div>
-            </nav>
         </div>
-    </div>
-    <!-- Navbar End -->
 
+    </section>
 
-    <!-- Search Start -->
-    <div class="container-fluid bg-white pt-3 px-lg-5">
-        <div class="row mx-n2">
-            <div class="col-xl-2 col-lg-4 col-md-6 px-2">
-                <select class="custom-select px-4 mb-3" style="height: 50px;">
-                    <option selected>Pickup Location</option>
-                    <option value="1">Location 1</option>
-                    <option value="2">Location 2</option>
-                    <option value="3">Location 3</option>
-                </select>
-            </div>
-            <div class="col-xl-2 col-lg-4 col-md-6 px-2">
-                <select class="custom-select px-4 mb-3" style="height: 50px;">
-                    <option selected>Drop Location</option>
-                    <option value="1">Location 1</option>
-                    <option value="2">Location 2</option>
-                    <option value="3">Location 3</option>
-                </select>
-            </div>
-            <div class="col-xl-2 col-lg-4 col-md-6 px-2">
-                <div class="date mb-3" id="date" data-target-input="nearest">
-                    <input type="text" class="form-control p-4 datetimepicker-input" placeholder="Pickup Date"
-                        data-target="#date" data-toggle="datetimepicker" />
+    <section class="home2">
+        <h1 class="sectionName" id="CarType1">General Cars</h1>
+        <div class="container">
+            <div class="card">
+
+                <img src="assests/pic_vid/pic/generalCars/1_Suzuki-Alto-removebg-preview.png" alt="SuzukiAlto">
+                <div class="intro">
+                    <h1>Suzuki Alto-Premium Manual</h1>
+                    <p> * Car ID : CA001 <br>
+                        * Transmission type : Auto <br>
+                        <span class="cardidandtt">DAILY RATE : RS.8000.00</span> <br>
+                        <span class="cardidandtt">MONTHLY RATE : RS.10000.00</span>  <br>
+                        * Extra KM : rs.80.00 <br>
+                        * Color : Blue <br>
+                    </p>
                 </div>
+                <a href="pages/index.html" class="btnRent">Rent Now</a>
             </div>
-            <div class="col-xl-2 col-lg-4 col-md-6 px-2">
-                <div class="time mb-3" id="time" data-target-input="nearest">
-                    <input type="text" class="form-control p-4 datetimepicker-input" placeholder="Pickup Time"
-                        data-target="#time" data-toggle="datetimepicker" />
+
+            <div class="card">
+                <img src="assests/pic_vid/pic/generalCars/2_Suzuki_Alto_K10-removebg-preview.png" alt="SuzukiAltoK10">
+                <div class="intro">
+                    <h1>Suzuki_Alto_K10</h1>
+                    <p> * Car ID : CA002 <br>
+                        * Transmission type : Manual <br>
+                        <span class="cardidandtt">DAILY RATE : RS.5000.00</span> <br>
+                        <span class="cardidandtt">MONTHLY RATE : RS.50000.00</span>  <br>
+                        * extra KM : rs.50.00 <br>
+                        * Color : red <br>
+                    </p>
                 </div>
+
+                <a href="#" class="btnRent">Rent Now</a>
             </div>
-            <div class="col-xl-2 col-lg-4 col-md-6 px-2">
-                <select class="custom-select px-4 mb-3" style="height: 50px;">
-                    <option selected>Select A Car</option>
-                    <option value="1">Car 1</option>
-                    <option value="2">Car 1</option>
-                    <option value="3">Car 1</option>
-                </select>
+
+            <div class="card">
+                <img src="assests/pic_vid/pic/generalCars/3_Suzuki_Celerio_-_Auto__-removebg-preview.png" alt="SuzukiCelerio">
+                <div class="intro">
+                    <h1>Suzuki Celerio</h1>
+                    <p> * Car ID : CA003 <br>
+                        * Transmission type : Auto <br>
+                        <span class="cardidandtt">DAILY RATE : RS.8000.00</span> <br>
+                        <span class="cardidandtt">MONTHLY RATE : RS.10000.00</span>  <br>
+                        * extra KM : rs.80.00 <br>
+                        * Color : Yellow <br>
+                    </p>
+                </div>
+
+                <a href="#" class="btnRent">Rent Now</a>
             </div>
-            <div class="col-xl-2 col-lg-4 col-md-6 px-2">
-                <button class="btn btn-primary btn-block mb-3" type="submit" style="height: 50px;">Search</button>
+
+            <div class="card">
+                <img src="assests/pic_vid/pic/generalCars/4_Perodua_Daihatsu-Ayla-front-removebg-preview.png" alt="SuzukiAlto">
+                <div class="intro">
+                    <h1>Perodua(Daihatsu)</h1>
+                    <p> * Car ID : CA004 <br>
+                        * Transmission type : Auto <br>
+                        <span class="cardidandtt">DAILY RATE : RS.8000.00</span> <br>
+                        <span class="cardidandtt">MONTHLY RATE : RS.10000.00</span>  <br>
+                        * extra KM : rs.80.00 <br>
+                        * Color : light blue <br>
+                    </p>
+                </div>
+                <a href="#" class="btnRent">Rent Now</a>
             </div>
+
         </div>
-    </div>
-    <!-- Search End -->
 
-
-    <!-- Carousel Start -->
-    <div class="container-fluid p-0" style="margin-bottom: 90px;">
-        <div id="header-carousel" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="w-100" src="img/carousel-1.jpg" alt="Image">
-                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                        <div class="p-3" style="max-width: 900px;">
-                            <h4 class="text-white text-uppercase mb-md-3">Rent A Car</h4>
-                            <h1 class="display-1 text-white mb-md-4">Best Rental Cars In Your Location</h1>
-                            <a href="" class="btn btn-primary py-md-3 px-md-5 mt-2">Reserve Now</a>
-                        </div>
-                    </div>
+        <!--============================================================-->
+        <div class="container" id="carsettwo">
+            <div class="card">
+                <img src="assests/pic_vid/pic/generalCars/5_Toyota_Aqua_Hybrid-removebg-preview.png" alt="SuzukiAlto">
+                <div class="intro">
+                    <h1>Suzuki Alto-Premium Manual</h1>
+                    <p> * Car ID : CA001 <br>
+                        * Transmission type : Auto <br>
+                        <span class="cardidandtt">DAILY RATE : RS.8000.00</span> <br>
+                        <span class="cardidandtt">MONTHLY RATE : RS.10000.00</span>  <br>
+                        * Extra KM : rs.80.00 <br>
+                        * Color : Blue <br>
+                    </p>
                 </div>
-                <div class="carousel-item">
-                    <img class="w-100" src="img/carousel-2.jpg" alt="Image">
-                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                        <div class="p-3" style="max-width: 900px;">
-                            <h4 class="text-white text-uppercase mb-md-3">Rent A Car</h4>
-                            <h1 class="display-1 text-white mb-md-4">Quality Cars with Unlimited Miles</h1>
-                            <a href="" class="btn btn-primary py-md-3 px-md-5 mt-2">Reserve Now</a>
-                        </div>
-                    </div>
-                </div>
+                <a href="pages/index.html" class="btnRent">Rent Now</a>
             </div>
-            <a class="carousel-control-prev" href="#header-carousel" data-slide="prev">
-                <div class="btn btn-dark" style="width: 45px; height: 45px;">
-                    <span class="carousel-control-prev-icon mb-n2"></span>
+
+            <div class="card">
+                <img src="assests/pic_vid/pic/generalCars/6_vit1701_28_s-removebg-preview.png" alt="SuzukiAltoK10">
+                <div class="intro">
+                    <h1>Suzuki_Alto_K10</h1>
+                    <p> * Car ID : CA002 <br>
+                        * Transmission type : Manual <br>
+                        <span class="cardidandtt">DAILY RATE : RS.5000.00</span> <br>
+                        <span class="cardidandtt">MONTHLY RATE : RS.50000.00</span>  <br>
+                        * extra KM : rs.50.00 <br>
+                        * Color : red <br>
+                    </p>
                 </div>
-            </a>
-            <a class="carousel-control-next" href="#header-carousel" data-slide="next">
-                <div class="btn btn-dark" style="width: 45px; height: 45px;">
-                    <span class="carousel-control-next-icon mb-n2"></span>
+                <a href="pages/index.html" class="btnRent">Rent Now</a>
+            </div>
+
+            <div class="card">
+                <img src="assests/pic_vid/pic/generalCars/7_TOYOTA_Corolla_-removebg-preview.png" alt="SuzukiCelerio">
+                <div class="intro">
+                    <h1>Suzuki Celerio</h1>
+                    <p> * Car ID : CA003 <br>
+                        * Transmission type : Auto <br>
+                        <span class="cardidandtt">DAILY RATE : RS.8000.00</span> <br>
+                        <span class="cardidandtt">MONTHLY RATE : RS.10000.00</span>  <br>
+                        * extra KM : rs.80.00 <br>
+                        * Color : Yellow <br>
+                    </p>
                 </div>
-            </a>
+                <a href="pages/index.html" class="btnRent">Rent Now</a>
+            </div>
+
+            <div class="card">
+                <img src="assests/pic_vid/pic/generalCars/8_Ford_Model_T_touring_car-removebg-preview.png" alt="SuzukiAlto">
+                <div class="intro">
+                    <h1>Perodua(Daihatsu)</h1>
+                    <p> * Car ID : CA004 <br>
+                        * Transmission type : Auto <br>
+                        <span class="cardidandtt">DAILY RATE : RS.8000.00</span> <br>
+                        <span class="cardidandtt">MONTHLY RATE : RS.10000.00</span>  <br>
+                        * extra KM : rs.80.00 <br>
+                        * Color : light blue <br>
+                    </p>
+                </div>
+                <a href="pages/index.html" class="btnRent">Rent Now</a>
+            </div>
+
         </div>
-    </div>
-    <!-- Carousel End -->
 
+        <!--==========================================-->
 
-    <!-- About Start -->
-    <div class="container-fluid py-5">
-        <div class="container pt-5 pb-3">
-            <h1 class="display-1 text-primary text-center">01</h1>
-            <h1 class="display-4 text-uppercase text-center mb-5">Welcome To <span class="text-primary">Royal Cars</span></h1>
-            <div class="row justify-content-center">
-                <div class="col-lg-10 text-center">
-                    <img class="w-75 mb-4" src="img/about.png" alt="">
-                    <p>Justo et eos et ut takimata sed sadipscing dolore lorem, et elitr labore labore voluptua no rebum sed, stet voluptua amet sed elitr ea dolor dolores no clita. Dolores diam magna clita ea eos amet, amet rebum voluptua vero vero sed clita accusam takimata. Nonumy labore ipsum sea voluptua sea eos sit justo, no ipsum sanctus sanctus no et no ipsum amet, tempor labore est labore no. Eos diam eirmod lorem ut eirmod, ipsum diam sadipscing stet dolores elitr elitr eirmod dolore. Magna elitr accusam takimata labore, et at erat eirmod consetetur tempor eirmod invidunt est, ipsum nonumy at et.</p>
+        <div class="container" id="carsetthree">
+            <div class="card">
+                <img src="assests/pic_vid/pic/generalCars/9_Mitsubishi_Colt-removebg-preview.png" alt="SuzukiAlto">
+                <div class="intro">
+                    <h1>Suzuki Alto-Premium Manual</h1>
+                    <p> * Car ID : CA001 <br>
+                        * Transmission type : Auto <br>
+                        <span class="cardidandtt">DAILY RATE : RS.8000.00</span> <br>
+                        <span class="cardidandtt">MONTHLY RATE : RS.10000.00</span>  <br>
+                        * Extra KM : rs.80.00 <br>
+                        * Color : Blue <br>
+                    </p>
                 </div>
+                <a href="pages/index.html" class="btnRent">Rent Now</a>
             </div>
-            <div class="row mt-3">
-                <div class="col-lg-4 mb-2">
-                    <div class="d-flex align-items-center bg-light p-4 mb-4" style="height: 150px;">
-                        <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary ml-n4 mr-4" style="width: 100px; height: 100px;">
-                            <i class="fa fa-2x fa-headset text-secondary"></i>
-                        </div>
-                        <h4 class="text-uppercase m-0">24/7 Car Rental Support</h4>
-                    </div>
+
+            <div class="card">
+                <img src="assests/pic_vid/pic/generalCars/10_Classic_cars-removebg-preview.png" alt="SuzukiAltoK10">
+                <div class="intro">
+                    <h1>Suzuki_Alto_K10</h1>
+                    <p> * Car ID : CA002 <br>
+                        * Transmission type : Manual <br>
+                        <span class="cardidandtt">DAILY RATE : RS.5000.00</span> <br>
+                        <span class="cardidandtt">MONTHLY RATE : RS.50000.00</span>  <br>
+                        * extra KM : rs.50.00 <br>
+                        * Color : red <br>
+                    </p>
                 </div>
-                <div class="col-lg-4 mb-2">
-                    <div class="d-flex align-items-center bg-secondary p-4 mb-4" style="height: 150px;">
-                        <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary ml-n4 mr-4" style="width: 100px; height: 100px;">
-                            <i class="fa fa-2x fa-car text-secondary"></i>
-                        </div>
-                        <h4 class="text-light text-uppercase m-0">Car Reservation Anytime</h4>
-                    </div>
-                </div>
-                <div class="col-lg-4 mb-2">
-                    <div class="d-flex align-items-center bg-light p-4 mb-4" style="height: 150px;">
-                        <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary ml-n4 mr-4" style="width: 100px; height: 100px;">
-                            <i class="fa fa-2x fa-map-marker-alt text-secondary"></i>
-                        </div>
-                        <h4 class="text-uppercase m-0">Lots Of Pickup Locations</h4>
-                    </div>
-                </div>
+                <a href="pages/index.html" class="btnRent">Rent Now</a>
             </div>
+
+            <div class="card">
+                <img src="assests/pic_vid/pic/generalCars/11_Chevrolet_Chevy_Nova-removebg-preview.png" alt="SuzukiCelerio">
+                <div class="intro">
+                    <h1>Suzuki Celerio</h1>
+                    <p> * Car ID : CA003 <br>
+                        * Transmission type : Auto <br>
+                        <span class="cardidandtt">DAILY RATE : RS.8000.00</span> <br>
+                        <span class="cardidandtt">MONTHLY RATE : RS.10000.00</span>  <br>
+                        * extra KM : rs.80.00 <br>
+                        * Color : Yellow <br>
+                    </p>
+                </div>
+                <a href="pages/index.html" class="btnRent">Rent Now</a>
+            </div>
+
+            <div class="card">
+                <img src="assests/pic_vid/pic/generalCars/12_Impala-removebg-preview.png" alt="SuzukiAlto">
+                <div class="intro">
+                    <h1>Perodua(Daihatsu)</h1>
+                    <p> * Car ID : CA004 <br>
+                        * Transmission type : Auto <br>
+                        <span class="cardidandtt">DAILY RATE : RS.8000.00</span> <br>
+                        <span class="cardidandtt">MONTHLY RATE : RS.10000.00</span>  <br>
+                        * extra KM : rs.80.00 <br>
+                        * Color : light blue <br>
+                    </p>
+                </div>
+                <a href="pages/index.html" class="btnRent">Rent Now</a>
+            </div>
+
         </div>
-    </div>
-    <!-- About End -->
-    
 
-    <!-- Services Start -->
-    <div class="container-fluid py-5">
-        <div class="container pt-5 pb-3">
-            <h1 class="display-1 text-primary text-center">02</h1>
-            <h1 class="display-4 text-uppercase text-center mb-5">Our Services</h1>
-            <div class="row">
-                <div class="col-lg-4 col-md-6 mb-2">
-                    <div class="service-item d-flex flex-column justify-content-center px-4 mb-4">
-                        <div class="d-flex align-items-center justify-content-between mb-3">
-                            <div class="d-flex align-items-center justify-content-center bg-primary ml-n4" style="width: 80px; height: 80px;">
-                                <i class="fa fa-2x fa-taxi text-secondary"></i>
-                            </div>
-                            <h1 class="display-2 text-white mt-n2 m-0">01</h1>
-                        </div>
-                        <h4 class="text-uppercase mb-3">Car Rental</h4>
-                        <p class="m-0">Kasd dolor no lorem nonumy sit labore tempor at justo rebum rebum stet, justo elitr dolor amet sit sea sed</p>
-                    </div>
+    </section>
+
+<!--===============================================Premium Cars=============================================================================================-->
+
+    <section class="home2">
+        <h1 class="sectionName2" id="CarType2">Premium Cars</h1>
+        <div class="container" id="carsetFour">
+            <div class="card">
+
+                <img src="assests/pic_vid/pic/premiumCars/1_Toyota_Corolla_AxioNZE141-removebg-preview.png " alt="SuzukiAlto">
+                <div class="intro">
+                    <h1>Suzuki Alto-Premium Manual</h1>
+                    <p> * Car ID : CA001 <br>
+                        * Transmission type : Auto <br>
+                        <span class="cardidandtt">DAILY RATE : RS.8000.00</span> <br>
+                        <span class="cardidandtt">MONTHLY RATE : RS.10000.00</span>  <br>
+                        * Extra KM : rs.80.00 <br>
+                        * Color : Blue <br>
+                    </p>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-2">
-                    <div class="service-item active d-flex flex-column justify-content-center px-4 mb-4">
-                        <div class="d-flex align-items-center justify-content-between mb-3">
-                            <div class="d-flex align-items-center justify-content-center bg-primary ml-n4" style="width: 80px; height: 80px;">
-                                <i class="fa fa-2x fa-money-check-alt text-secondary"></i>
-                            </div>
-                            <h1 class="display-2 text-white mt-n2 m-0">02</h1>
-                        </div>
-                        <h4 class="text-uppercase mb-3">Car Financing</h4>
-                        <p class="m-0">Kasd dolor no lorem nonumy sit labore tempor at justo rebum rebum stet, justo elitr dolor amet sit sea sed</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-2">
-                    <div class="service-item d-flex flex-column justify-content-center px-4 mb-4">
-                        <div class="d-flex align-items-center justify-content-between mb-3">
-                            <div class="d-flex align-items-center justify-content-center bg-primary ml-n4" style="width: 80px; height: 80px;">
-                                <i class="fa fa-2x fa-car text-secondary"></i>
-                            </div>
-                            <h1 class="display-2 text-white mt-n2 m-0">03</h1>
-                        </div>
-                        <h4 class="text-uppercase mb-3">Car Inspection</h4>
-                        <p class="m-0">Kasd dolor no lorem nonumy sit labore tempor at justo rebum rebum stet, justo elitr dolor amet sit sea sed</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-2">
-                    <div class="service-item d-flex flex-column justify-content-center px-4 mb-4">
-                        <div class="d-flex align-items-center justify-content-between mb-3">
-                            <div class="d-flex align-items-center justify-content-center bg-primary ml-n4" style="width: 80px; height: 80px;">
-                                <i class="fa fa-2x fa-cogs text-secondary"></i>
-                            </div>
-                            <h1 class="display-2 text-white mt-n2 m-0">04</h1>
-                        </div>
-                        <h4 class="text-uppercase mb-3">Auto Repairing</h4>
-                        <p class="m-0">Kasd dolor no lorem nonumy sit labore tempor at justo rebum rebum stet, justo elitr dolor amet sit sea sed</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-2">
-                    <div class="service-item d-flex flex-column justify-content-center px-4 mb-4">
-                        <div class="d-flex align-items-center justify-content-between mb-3">
-                            <div class="d-flex align-items-center justify-content-center bg-primary ml-n4" style="width: 80px; height: 80px;">
-                                <i class="fa fa-2x fa-spray-can text-secondary"></i>
-                            </div>
-                            <h1 class="display-2 text-white mt-n2 m-0">05</h1>
-                        </div>
-                        <h4 class="text-uppercase mb-3">Auto Painting</h4>
-                        <p class="m-0">Kasd dolor no lorem nonumy sit labore tempor at justo rebum rebum stet, justo elitr dolor amet sit sea sed</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-2">
-                    <div class="service-item d-flex flex-column justify-content-center px-4 mb-4">
-                        <div class="d-flex align-items-center justify-content-between mb-3">
-                            <div class="d-flex align-items-center justify-content-center bg-primary ml-n4" style="width: 80px; height: 80px;">
-                                <i class="fa fa-2x fa-pump-soap text-secondary"></i>
-                            </div>
-                            <h1 class="display-2 text-white mt-n2 m-0">06</h1>
-                        </div>
-                        <h4 class="text-uppercase mb-3">Auto Cleaning</h4>
-                        <p class="m-0">Kasd dolor no lorem nonumy sit labore tempor at justo rebum rebum stet, justo elitr dolor amet sit sea sed</p>
-                    </div>
-                </div>
+
+                <a href="pages/index.html" class="btnRent">Rent Now</a>
             </div>
+
+            <div class="card">
+                <img src="assests/pic_vid/pic/premiumCars/2_Perodua_Bezza_Prime_Sedan-removebg-preview.png" alt="SuzukiAltoK10">
+                <div class="intro">
+                    <h1>Suzuki_Alto_K10</h1>
+                    <p> * Car ID : CA002 <br>
+                        * Transmission type : Manual <br>
+                        <span class="cardidandtt">DAILY RATE : RS.5000.00</span> <br>
+                        <span class="cardidandtt">MONTHLY RATE : RS.50000.00</span>  <br>
+                        * extra KM : rs.50.00 <br>
+                        * Color : red <br>
+                    </p>
+                </div>
+
+                <a href="#" class="btnRent">Rent Now</a>
+            </div>
+
+            <div class="card">
+                <img src="assests/pic_vid/pic/premiumCars/3_Toyota_Allion_NZT_260_3-removebg-preview.png" alt="SuzukiCelerio">
+                <div class="intro">
+                    <h1>Suzuki Celerio</h1>
+                    <p> * Car ID : CA003 <br>
+                        * Transmission type : Auto <br>
+                        <span class="cardidandtt">DAILY RATE : RS.8000.00</span> <br>
+                        <span class="cardidandtt">MONTHLY RATE : RS.10000.00</span>  <br>
+                        * extra KM : rs.80.00 <br>
+                        * Color : Yellow <br>
+                    </p>
+                </div>
+
+                <a href="#" class="btnRent">Rent Now</a>
+            </div>
+
+            <div class="card">
+                <img src="assests/pic_vid/pic/premiumCars/4_Toyota_Axio_NKR_165__-removebg-preview.png" alt="SuzukiAlto">
+                <div class="intro">
+                    <h1>Perodua(Daihatsu)</h1>
+                    <p> * Car ID : CA004 <br>
+                        * Transmission type : Auto <br>
+                        <span class="cardidandtt">DAILY RATE : RS.8000.00</span> <br>
+                        <span class="cardidandtt">MONTHLY RATE : RS.10000.00</span>  <br>
+                        * extra KM : rs.80.00 <br>
+                        * Color : light blue <br>
+                    </p>
+                </div>
+                <a href="#" class="btnRent">Rent Now</a>
+            </div>
+
         </div>
-    </div>
-    <!-- Services End -->
 
-
-    <!-- Banner Start -->
-    <div class="container-fluid py-5">
-        <div class="container py-5">
-            <div class="bg-banner py-5 px-4 text-center">
-                <div class="py-5">
-                    <h1 class="display-1 text-uppercase text-primary mb-4">50% OFF</h1>
-                    <h1 class="text-uppercase text-light mb-4">Special Offer For New Members</h1>
-                    <p class="mb-4">Only for Sunday from 1st Jan to 30th Jan 2045</p>
-                    <a class="btn btn-primary mt-2 py-3 px-5" href="">Register Now</a>
+        <!--============================================================-->
+        <div class="container" id="carsetFive">
+            <div class="card">
+                <img src="assests/pic_vid/pic/premiumCars/5_vagonar-removebg-preview.png" alt="SuzukiAlto">
+                <div class="intro">
+                    <h1>Suzuki Alto-Premium Manual</h1>
+                    <p> * Car ID : CA001 <br>
+                        * Transmission type : Auto <br>
+                        <span class="cardidandtt">DAILY RATE : RS.8000.00</span> <br>
+                        <span class="cardidandtt">MONTHLY RATE : RS.10000.00</span>  <br>
+                        * Extra KM : rs.80.00 <br>
+                        * Color : Blue <br>
+                    </p>
                 </div>
+                <a href="pages/index.html" class="btnRent">Rent Now</a>
             </div>
+
+            <div class="card">
+                <img src="assests/pic_vid/pic/premiumCars/6_Safari_vs_MG_Hector_Plus_vs_XUV500_1611727037074_1611727060144_1627907756064-removebg-preview.png" alt="SuzukiAltoK10">
+                <div class="intro">
+                    <h1>Suzuki_Alto_K10</h1>
+                    <p> * Car ID : CA002 <br>
+                        * Transmission type : Manual <br>
+                        <span class="cardidandtt">DAILY RATE : RS.5000.00</span> <br>
+                        <span class="cardidandtt">MONTHLY RATE : RS.50000.00</span>  <br>
+                        * extra KM : rs.50.00 <br>
+                        * Color : red <br>
+                    </p>
+                </div>
+                <a href="pages/index.html" class="btnRent">Rent Now</a>
+            </div>
+
+            <div class="card">
+                <img src="assests/pic_vid/pic/premiumCars/7_TOYOTA_CHR-removebg-preview.png" alt="SuzukiCelerio">
+                <div class="intro">
+                    <h1>Suzuki Celerio</h1>
+                    <p> * Car ID : CA003 <br>
+                        * Transmission type : Auto <br>
+                        <span class="cardidandtt">DAILY RATE : RS.8000.00</span> <br>
+                        <span class="cardidandtt">MONTHLY RATE : RS.10000.00</span>  <br>
+                        * extra KM : rs.80.00 <br>
+                        * Color : Yellow <br>
+                    </p>
+                </div>
+                <a href="pages/index.html" class="btnRent">Rent Now</a>
+            </div>
+
+            <div class="card">
+                <img src="assests/pic_vid/pic/premiumCars/8_kodiaq-exterior-right-front-three-quarter-removebg-preview.png" alt="SuzukiAlto">
+                <div class="intro">
+                    <h1>Perodua(Daihatsu)</h1>
+                    <p> * Car ID : CA004 <br>
+                        * Transmission type : Auto <br>
+                        <span class="cardidandtt">DAILY RATE : RS.8000.00</span> <br>
+                        <span class="cardidandtt">MONTHLY RATE : RS.10000.00</span>  <br>
+                        * extra KM : rs.80.00 <br>
+                        * Color : light blue <br>
+                    </p>
+                </div>
+                <a href="pages/index.html" class="btnRent">Rent Now</a>
+            </div>
+
         </div>
-    </div>
-    <!-- Banner End -->
 
+    </section>
 
-    <!-- Rent A Car Start -->
-    <div class="container-fluid py-5">
-        <div class="container pt-5 pb-3">
-            <h1 class="display-1 text-primary text-center">03</h1>
-            <h1 class="display-4 text-uppercase text-center mb-5">Find Your Car</h1>
-            <div class="row">
-                <div class="col-lg-4 col-md-6 mb-2">
-                    <div class="rent-item mb-4">
-                        <img class="img-fluid mb-4" src="img/car-rent-1.png" alt="">
-                        <h4 class="text-uppercase mb-4">Mercedes Benz R3</h4>
-                        <div class="d-flex justify-content-center mb-4">
-                            <div class="px-2">
-                                <i class="fa fa-car text-primary mr-1"></i>
-                                <span>2015</span>
-                            </div>
-                            <div class="px-2 border-left border-right">
-                                <i class="fa fa-cogs text-primary mr-1"></i>
-                                <span>AUTO</span>
-                            </div>
-                            <div class="px-2">
-                                <i class="fa fa-road text-primary mr-1"></i>
-                                <span>25K</span>
-                            </div>
-                        </div>
-                        <a class="btn btn-primary px-3" href="">$99.00/Day</a>
-                    </div>
+    <!--===============================================Luxury Cars=============================================================================================-->
+
+    <section class="home2">
+        <h1 class="sectionName3" id="CarType3">Luxury Cars</h1>
+        <div class="container" id="carsetSix">
+            <div class="card">
+
+                <img src="assests/pic_vid/pic/luxuryCars/1_Lamborghini_Huracan_STO_-removebg-preview.png" alt="SuzukiAlto">
+                <div class="intro">
+                    <h1>Suzuki Alto-Premium Manual</h1>
+                    <p> * Car ID : CA001 <br>
+                        * Transmission type : Auto <br>
+                        <span class="cardidandtt">DAILY RATE : RS.8000.00</span> <br>
+                        <span class="cardidandtt">MONTHLY RATE : RS.10000.00</span>  <br>
+                        * Extra KM : rs.80.00 <br>
+                        * Color : Blue <br>
+                    </p>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-2">
-                    <div class="rent-item active mb-4">
-                        <img class="img-fluid mb-4" src="img/car-rent-2.png" alt="">
-                        <h4 class="text-uppercase mb-4">Mercedes Benz R3</h4>
-                        <div class="d-flex justify-content-center mb-4">
-                            <div class="px-2">
-                                <i class="fa fa-car text-primary mr-1"></i>
-                                <span>2015</span>
-                            </div>
-                            <div class="px-2 border-left border-right">
-                                <i class="fa fa-cogs text-primary mr-1"></i>
-                                <span>AUTO</span>
-                            </div>
-                            <div class="px-2">
-                                <i class="fa fa-road text-primary mr-1"></i>
-                                <span>25K</span>
-                            </div>
-                        </div>
-                        <a class="btn btn-primary px-3" href="">$99.00/Day</a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-2">
-                    <div class="rent-item mb-4">
-                        <img class="img-fluid mb-4" src="img/car-rent-3.png" alt="">
-                        <h4 class="text-uppercase mb-4">Mercedes Benz R3</h4>
-                        <div class="d-flex justify-content-center mb-4">
-                            <div class="px-2">
-                                <i class="fa fa-car text-primary mr-1"></i>
-                                <span>2015</span>
-                            </div>
-                            <div class="px-2 border-left border-right">
-                                <i class="fa fa-cogs text-primary mr-1"></i>
-                                <span>AUTO</span>
-                            </div>
-                            <div class="px-2">
-                                <i class="fa fa-road text-primary mr-1"></i>
-                                <span>25K</span>
-                            </div>
-                        </div>
-                        <a class="btn btn-primary px-3" href="">$99.00/Day</a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-2">
-                    <div class="rent-item mb-4">
-                        <img class="img-fluid mb-4" src="img/car-rent-4.png" alt="">
-                        <h4 class="text-uppercase mb-4">Mercedes Benz R3</h4>
-                        <div class="d-flex justify-content-center mb-4">
-                            <div class="px-2">
-                                <i class="fa fa-car text-primary mr-1"></i>
-                                <span>2015</span>
-                            </div>
-                            <div class="px-2 border-left border-right">
-                                <i class="fa fa-cogs text-primary mr-1"></i>
-                                <span>AUTO</span>
-                            </div>
-                            <div class="px-2">
-                                <i class="fa fa-road text-primary mr-1"></i>
-                                <span>25K</span>
-                            </div>
-                        </div>
-                        <a class="btn btn-primary px-3" href="">$99.00/Day</a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-2">
-                    <div class="rent-item mb-4">
-                        <img class="img-fluid mb-4" src="img/car-rent-5.png" alt="">
-                        <h4 class="text-uppercase mb-4">Mercedes Benz R3</h4>
-                        <div class="d-flex justify-content-center mb-4">
-                            <div class="px-2">
-                                <i class="fa fa-car text-primary mr-1"></i>
-                                <span>2015</span>
-                            </div>
-                            <div class="px-2 border-left border-right">
-                                <i class="fa fa-cogs text-primary mr-1"></i>
-                                <span>AUTO</span>
-                            </div>
-                            <div class="px-2">
-                                <i class="fa fa-road text-primary mr-1"></i>
-                                <span>25K</span>
-                            </div>
-                        </div>
-                        <a class="btn btn-primary px-3" href="">$99.00/Day</a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-2">
-                    <div class="rent-item mb-4">
-                        <img class="img-fluid mb-4" src="img/car-rent-6.png" alt="">
-                        <h4 class="text-uppercase mb-4">Mercedes Benz R3</h4>
-                        <div class="d-flex justify-content-center mb-4">
-                            <div class="px-2">
-                                <i class="fa fa-car text-primary mr-1"></i>
-                                <span>2015</span>
-                            </div>
-                            <div class="px-2 border-left border-right">
-                                <i class="fa fa-cogs text-primary mr-1"></i>
-                                <span>AUTO</span>
-                            </div>
-                            <div class="px-2">
-                                <i class="fa fa-road text-primary mr-1"></i>
-                                <span>25K</span>
-                            </div>
-                        </div>
-                        <a class="btn btn-primary px-3" href="">$99.00/Day</a>
-                    </div>
-                </div>
+
+                <a href="pages/index.html" class="btnRent">Rent Now</a>
             </div>
+
+            <div class="card">
+                <img src="assests/pic_vid/pic/luxuryCars/2_TOYOTA_PREMIO-removebg-preview.png" alt="SuzukiAltoK10">
+                <div class="intro">
+                    <h1>Suzuki_Alto_K10</h1>
+                    <p> * Car ID : CA002 <br>
+                        * Transmission type : Manual <br>
+                        <span class="cardidandtt">DAILY RATE : RS.5000.00</span> <br>
+                        <span class="cardidandtt">MONTHLY RATE : RS.50000.00</span>  <br>
+                        * extra KM : rs.50.00 <br>
+                        * Color : red <br>
+                    </p>
+                </div>
+
+                <a href="#" class="btnRent">Rent Now</a>
+            </div>
+
+            <div class="card">
+                <img src="assests/pic_vid/pic/luxuryCars/3_Mercedes-Benz_AMG_GT-removebg-preview.png" alt="SuzukiCelerio">
+                <div class="intro">
+                    <h1>Suzuki Celerio</h1>
+                    <p> * Car ID : CA003 <br>
+                        * Transmission type : Auto <br>
+                        <span class="cardidandtt">DAILY RATE : RS.8000.00</span> <br>
+                        <span class="cardidandtt">MONTHLY RATE : RS.10000.00</span>  <br>
+                        * extra KM : rs.80.00 <br>
+                        * Color : Yellow <br>
+                    </p>
+                </div>
+
+                <a href="#" class="btnRent">Rent Now</a>
+            </div>
+
+            <div class="card">
+                <img src="assests/pic_vid/pic/luxuryCars/4_2024_BMW_I8_M-removebg-preview.png" alt="SuzukiAlto">
+                <div class="intro">
+                    <h1>Perodua(Daihatsu)</h1>
+                    <p> * Car ID : CA004 <br>
+                        * Transmission type : Auto <br>
+                        <span class="cardidandtt">DAILY RATE : RS.8000.00</span> <br>
+                        <span class="cardidandtt">MONTHLY RATE : RS.10000.00</span>  <br>
+                        * extra KM : rs.80.00 <br>
+                        * Color : light blue <br>
+                    </p>
+                </div>
+                <a href="#" class="btnRent">Rent Now</a>
+            </div>
+
         </div>
-    </div>
-    <!-- Rent A Car End -->
 
-
-    <!-- Team Start -->
-    <div class="container-fluid py-5">
-        <div class="container py-5">
-            <h1 class="display-1 text-primary text-center">04</h1>
-            <h1 class="display-4 text-uppercase text-center mb-5">Meet Our Team</h1>
-            <div class="owl-carousel team-carousel position-relative" style="padding: 0 30px;">
-                <div class="team-item">
-                    <img class="img-fluid w-100" src="img/team-1.jpg" alt="">
-                    <div class="position-relative py-4">
-                        <h4 class="text-uppercase">Full Name</h4>
-                        <p class="m-0">Designation</p>
-                        <div class="team-social position-absolute w-100 h-100 d-flex align-items-center justify-content-center">
-                            <a class="btn btn-lg btn-primary btn-lg-square mx-1" href="#"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-lg btn-primary btn-lg-square mx-1" href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-lg btn-primary btn-lg-square mx-1" href="#"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
+        <!--============================================================-->
+        <div class="container" id="carsetSeven">
+            <div class="card">
+                <img src="assests/pic_vid/pic/luxuryCars/5_BMW_i8_Pure_Impulse__2015_-removebg-preview.png" alt="SuzukiAlto">
+                <div class="intro">
+                    <h1>Suzuki Alto-Premium Manual</h1>
+                    <p> * Car ID : CA001 <br>
+                        * Transmission type : Auto <br>
+                        <span class="cardidandtt">DAILY RATE : RS.8000.00</span> <br>
+                        <span class="cardidandtt">MONTHLY RATE : RS.10000.00</span>  <br>
+                        * Extra KM : rs.80.00 <br>
+                        * Color : Blue <br>
+                    </p>
                 </div>
-                <div class="team-item">
-                    <img class="img-fluid w-100" src="img/team-2.jpg" alt="">
-                    <div class="position-relative py-4">
-                        <h4 class="text-uppercase">Full Name</h4>
-                        <p class="m-0">Designation</p>
-                        <div class="team-social position-absolute w-100 h-100 d-flex align-items-center justify-content-center">
-                            <a class="btn btn-lg btn-primary btn-lg-square mx-1" href="#"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-lg btn-primary btn-lg-square mx-1" href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-lg btn-primary btn-lg-square mx-1" href="#"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="team-item">
-                    <img class="img-fluid w-100" src="img/team-3.jpg" alt="">
-                    <div class="position-relative py-4">
-                        <h4 class="text-uppercase">Full Name</h4>
-                        <p class="m-0">Designation</p>
-                        <div class="team-social position-absolute w-100 h-100 d-flex align-items-center justify-content-center">
-                            <a class="btn btn-lg btn-primary btn-lg-square mx-1" href="#"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-lg btn-primary btn-lg-square mx-1" href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-lg btn-primary btn-lg-square mx-1" href="#"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="team-item">
-                    <img class="img-fluid w-100" src="img/team-4.jpg" alt="">
-                    <div class="position-relative py-4">
-                        <h4 class="text-uppercase">Full Name</h4>
-                        <p class="m-0">Designation</p>
-                        <div class="team-social position-absolute w-100 h-100 d-flex align-items-center justify-content-center">
-                            <a class="btn btn-lg btn-primary btn-lg-square mx-1" href="#"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-lg btn-primary btn-lg-square mx-1" href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-lg btn-primary btn-lg-square mx-1" href="#"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                </div>
+                <a href="pages/index.html" class="btnRent">Rent Now</a>
             </div>
+
+            <div class="card">
+                <img src="assests/pic_vid/pic/luxuryCars/6_Hummer_Car-removebg-preview.png" alt="SuzukiAltoK10">
+                <div class="intro">
+                    <h1>Suzuki_Alto_K10</h1>
+                    <p> * Car ID : CA002 <br>
+                        * Transmission type : Manual <br>
+                        <span class="cardidandtt">DAILY RATE : RS.5000.00</span> <br>
+                        <span class="cardidandtt">MONTHLY RATE : RS.50000.00</span>  <br>
+                        * extra KM : rs.50.00 <br>
+                        * Color : red <br>
+                    </p>
+                </div>
+                <a href="pages/index.html" class="btnRent">Rent Now</a>
+            </div>
+
+            <div class="card">
+                <img src="assests/pic_vid/pic/luxuryCars/7_Land_Rover_Discovery_Sport-removebg-preview.png" alt="SuzukiCelerio">
+                <div class="intro">
+                    <h1>Suzuki Celerio</h1>
+                    <p> * Car ID : CA003 <br>
+                        * Transmission type : Auto <br>
+                        <span class="cardidandtt">DAILY RATE : RS.8000.00</span> <br>
+                        <span class="cardidandtt">MONTHLY RATE : RS.10000.00</span>  <br>
+                        * extra KM : rs.80.00 <br>
+                        * Color : Yellow <br>
+                    </p>
+                </div>
+                <a href="pages/index.html" class="btnRent">Rent Now</a>
+            </div>
+
+            <div class="card">
+                <img src="assests/pic_vid/pic/luxuryCars/8_TOYOTA_Hiace_KDH-removebg-preview.png " alt="SuzukiAlto">
+                <div class="intro">
+                    <h1>Perodua(Daihatsu)</h1>
+                    <p> * Car ID : CA004 <br>
+                        * Transmission type : Auto <br>
+                        <span class="cardidandtt">DAILY RATE : RS.8000.00</span> <br>
+                        <span class="cardidandtt">MONTHLY RATE : RS.10000.00</span>  <br>
+                        * extra KM : rs.80.00 <br>
+                        * Color : light blue <br>
+                    </p>
+                </div>
+                <a href="pages/index.html" class="btnRent">Rent Now</a>
+            </div>
+
         </div>
-    </div>
-    <!-- Team End -->
 
 
-    <!-- Banner Start -->
-    <div class="container-fluid py-5">
-        <div class="container py-5">
-            <div class="row mx-0">
-                <div class="col-lg-6 px-0">
-                    <div class="px-5 bg-secondary d-flex align-items-center justify-content-between" style="height: 350px;">
-                        <img class="img-fluid flex-shrink-0 ml-n5 w-50 mr-4" src="img/banner-left.png" alt="">
-                        <div class="text-right">
-                            <h3 class="text-uppercase text-light mb-3">Want to be driver?</h3>
-                            <p class="mb-4">Lorem justo sit sit ipsum eos lorem kasd, kasd labore</p>
-                            <a class="btn btn-primary py-2 px-4" href="">Start Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 px-0">
-                    <div class="px-5 bg-dark d-flex align-items-center justify-content-between" style="height: 350px;">
-                        <div class="text-left">
-                            <h3 class="text-uppercase text-light mb-3">Looking for a car?</h3>
-                            <p class="mb-4">Lorem justo sit sit ipsum eos lorem kasd, kasd labore</p>
-                            <a class="btn btn-primary py-2 px-4" href="">Start Now</a>
-                        </div>
-                        <img class="img-fluid flex-shrink-0 mr-n5 w-50 ml-4" src="img/banner-right.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Banner End -->
+    </section>
 
 
-    <!-- Testimonial Start -->
-    <div class="container-fluid py-5">
-        <div class="container py-5">
-            <h1 class="display-1 text-primary text-center">05</h1>
-            <h1 class="display-4 text-uppercase text-center mb-5">Our Client's Say</h1>
-            <div class="owl-carousel testimonial-carousel">
-                <div class="testimonial-item d-flex flex-column justify-content-center px-4">
-                    <div class="d-flex align-items-center justify-content-between mb-3">
-                        <img class="img-fluid ml-n4" src="img/testimonial-1.jpg" alt="">
-                        <h1 class="display-2 text-white m-0 fa fa-quote-right"></h1>
-                    </div>
-                    <h4 class="text-uppercase mb-2">Client Name</h4>
-                    <i class="mb-2">Profession</i>
-                    <p class="m-0">Kasd dolor no lorem nonumy sit labore tempor at justo rebum rebum stet, justo elitr dolor amet sit sea sed</p>
-                </div>
-                <div class="testimonial-item d-flex flex-column justify-content-center px-4">
-                    <div class="d-flex align-items-center justify-content-between mb-3">
-                        <img class="img-fluid ml-n4" src="img/testimonial-2.jpg" alt="">
-                        <h1 class="display-2 text-white m-0 fa fa-quote-right"></h1>
-                    </div>
-                    <h4 class="text-uppercase mb-2">Client Name</h4>
-                    <i class="mb-2">Profession</i>
-                    <p class="m-0">Kasd dolor no lorem nonumy sit labore tempor at justo rebum rebum stet, justo elitr dolor amet sit sea sed</p>
-                </div>
-                <div class="testimonial-item d-flex flex-column justify-content-center px-4">
-                    <div class="d-flex align-items-center justify-content-between mb-3">
-                        <img class="img-fluid ml-n4" src="img/testimonial-3.jpg" alt="">
-                        <h1 class="display-2 text-white m-0 fa fa-quote-right"></h1>
-                    </div>
-                    <h4 class="text-uppercase mb-2">Client Name</h4>
-                    <i class="mb-2">Profession</i>
-                    <p class="m-0">Kasd dolor no lorem nonumy sit labore tempor at justo rebum rebum stet, justo elitr dolor amet sit sea sed</p>
-                </div>
-                <div class="testimonial-item d-flex flex-column justify-content-center px-4">
-                    <div class="d-flex align-items-center justify-content-between mb-3">
-                        <img class="img-fluid ml-n4" src="img/testimonial-4.jpg" alt="">
-                        <h1 class="display-2 text-white m-0 fa fa-quote-right"></h1>
-                    </div>
-                    <h4 class="text-uppercase mb-2">Client Name</h4>
-                    <i class="mb-2">Profession</i>
-                    <p class="m-0">Kasd dolor no lorem nonumy sit labore tempor at justo rebum rebum stet, justo elitr dolor amet sit sea sed</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Testimonial End -->
 
 
-    <!-- Contact Start -->
-    <div class="container-fluid py-5">
-        <div class="container pt-5 pb-3">
-            <h1 class="display-1 text-primary text-center">06</h1>
-            <h1 class="display-4 text-uppercase text-center mb-5">Contact Us</h1>
-            <div class="row">
-                <div class="col-lg-7 mb-2">
-                    <div class="contact-form bg-light mb-4" style="padding: 30px;">
-                        <form>
-                            <div class="row">
-                                <div class="col-6 form-group">
-                                    <input type="text" class="form-control p-4" placeholder="Your Name" required="required">
-                                </div>
-                                <div class="col-6 form-group">
-                                    <input type="email" class="form-control p-4" placeholder="Your Email" required="required">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control p-4" placeholder="Subject" required="required">
-                            </div>
-                            <div class="form-group">
-                                <textarea class="form-control py-3 px-4" rows="5" placeholder="Message" required="required"></textarea>
-                            </div>
-                            <div>
-                                <button class="btn btn-primary py-3 px-5" type="submit">Send Message</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <div class="col-lg-5 mb-2">
-                    <div class="bg-secondary d-flex flex-column justify-content-center px-5 mb-4" style="height: 435px;">
-                        <div class="d-flex mb-3">
-                            <i class="fa fa-2x fa-map-marker-alt text-primary flex-shrink-0 mr-3"></i>
-                            <div class="mt-n1">
-                                <h5 class="text-light">Head Office</h5>
-                                <p>123 Street, New York, USA</p>
-                            </div>
-                        </div>
-                        <div class="d-flex mb-3">
-                            <i class="fa fa-2x fa-map-marker-alt text-primary flex-shrink-0 mr-3"></i>
-                            <div class="mt-n1">
-                                <h5 class="text-light">Branch Office</h5>
-                                <p>123 Street, New York, USA</p>
-                            </div>
-                        </div>
-                        <div class="d-flex mb-3">
-                            <i class="fa fa-2x fa-envelope-open text-primary flex-shrink-0 mr-3"></i>
-                            <div class="mt-n1">
-                                <h5 class="text-light">Customer Service</h5>
-                                <p>customer@example.com</p>
-                            </div>
-                        </div>
-                        <div class="d-flex">
-                            <i class="fa fa-2x fa-envelope-open text-primary flex-shrink-0 mr-3"></i>
-                            <div class="mt-n1">
-                                <h5 class="text-light">Return & Refund</h5>
-                                <p class="m-0">refund@example.com</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Contact End -->
-
-
-    <!-- Vendor Start -->
-    <div class="container-fluid py-5">
-        <div class="container py-5">
-            <div class="owl-carousel vendor-carousel">
-                <div class="bg-light p-4">
-                    <img src="img/vendor-1.png" alt="">
-                </div>
-                <div class="bg-light p-4">
-                    <img src="img/vendor-2.png" alt="">
-                </div>
-                <div class="bg-light p-4">
-                    <img src="img/vendor-3.png" alt="">
-                </div>
-                <div class="bg-light p-4">
-                    <img src="img/vendor-4.png" alt="">
-                </div>
-                <div class="bg-light p-4">
-                    <img src="img/vendor-5.png" alt="">
-                </div>
-                <div class="bg-light p-4">
-                    <img src="img/vendor-6.png" alt="">
-                </div>
-                <div class="bg-light p-4">
-                    <img src="img/vendor-7.png" alt="">
-                </div>
-                <div class="bg-light p-4">
-                    <img src="img/vendor-8.png" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Vendor End -->
-
-
-    <!-- Footer Start -->
-    <div class="container-fluid bg-secondary py-5 px-sm-3 px-md-5" style="margin-top: 90px;">
-        <div class="row pt-5">
-            <div class="col-lg-3 col-md-6 mb-5">
-                <h4 class="text-uppercase text-light mb-4">Get In Touch</h4>
-                <p class="mb-2"><i class="fa fa-map-marker-alt text-white mr-3"></i>123 Street, New York, USA</p>
-                <p class="mb-2"><i class="fa fa-phone-alt text-white mr-3"></i>+012 345 67890</p>
-                <p><i class="fa fa-envelope text-white mr-3"></i>info@example.com</p>
-                <h6 class="text-uppercase text-white py-2">Follow Us</h6>
-                <div class="d-flex justify-content-start">
-                    <a class="btn btn-lg btn-dark btn-lg-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-lg btn-dark btn-lg-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-lg btn-dark btn-lg-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-                    <a class="btn btn-lg btn-dark btn-lg-square" href="#"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-5">
-                <h4 class="text-uppercase text-light mb-4">Usefull Links</h4>
-                <div class="d-flex flex-column justify-content-start">
-                    <a class="text-body mb-2" href="#"><i class="fa fa-angle-right text-white mr-2"></i>Private Policy</a>
-                    <a class="text-body mb-2" href="#"><i class="fa fa-angle-right text-white mr-2"></i>Term & Conditions</a>
-                    <a class="text-body mb-2" href="#"><i class="fa fa-angle-right text-white mr-2"></i>New Member Registration</a>
-                    <a class="text-body mb-2" href="#"><i class="fa fa-angle-right text-white mr-2"></i>Affiliate Programme</a>
-                    <a class="text-body mb-2" href="#"><i class="fa fa-angle-right text-white mr-2"></i>Return & Refund</a>
-                    <a class="text-body" href="#"><i class="fa fa-angle-right text-white mr-2"></i>Help & FQAs</a>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-5">
-                <h4 class="text-uppercase text-light mb-4">Car Gallery</h4>
-                <div class="row mx-n1">
-                    <div class="col-4 px-1 mb-2">
-                        <a href=""><img class="w-100" src="img/gallery-1.jpg" alt=""></a>
-                    </div>
-                    <div class="col-4 px-1 mb-2">
-                        <a href=""><img class="w-100" src="img/gallery-2.jpg" alt=""></a>
-                    </div>
-                    <div class="col-4 px-1 mb-2">
-                        <a href=""><img class="w-100" src="img/gallery-3.jpg" alt=""></a>
-                    </div>
-                    <div class="col-4 px-1 mb-2">
-                        <a href=""><img class="w-100" src="img/gallery-4.jpg" alt=""></a>
-                    </div>
-                    <div class="col-4 px-1 mb-2">
-                        <a href=""><img class="w-100" src="img/gallery-5.jpg" alt=""></a>
-                    </div>
-                    <div class="col-4 px-1 mb-2">
-                        <a href=""><img class="w-100" src="img/gallery-6.jpg" alt=""></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-5">
-                <h4 class="text-uppercase text-light mb-4">Newsletter</h4>
-                <p class="mb-4">Volup amet magna clita tempor. Tempor sea eos vero ipsum. Lorem lorem sit sed elitr sed kasd et</p>
-                <div class="w-100 mb-3">
-                    <div class="input-group">
-                        <input type="text" class="form-control bg-dark border-dark" style="padding: 25px;" placeholder="Your Email">
-                        <div class="input-group-append">
-                            <button class="btn btn-primary text-uppercase px-3">Sign Up</button>
-                        </div>
-                    </div>
-                </div>
-                <i>Lorem sit sed elitr sed kasd et</i>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid bg-dark py-4 px-sm-3 px-md-5">
-        <p class="mb-2 text-center text-body">&copy; <a href="#">Your Site Name</a>. All Rights Reserved.</p>
-		
-        <p class="m-0 text-center text-body">Designed by <a href="https://htmlcodex.com">HTML Codex</a></p>
-    </div>
-    <!-- Footer End -->
-
-
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
-
-
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/tempusdominus/js/moment.min.js"></script>
-    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
-    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
-
-    <!-- Javascript -->
-    <script src="js/main.js"></script>
 </body>
-
 </html>
+
+
+
+
+
