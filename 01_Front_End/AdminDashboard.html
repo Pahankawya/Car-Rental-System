@@ -7,13 +7,14 @@
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="assests/styles/AdminDashboard.css">
 
-<!--    <link rel="stylesheet" href="assests/css/bootstrap.css">-->
+
+    <!--    <link rel="stylesheet" href="assests/css/bootstrap.css">-->
 
 </head>
 <body>
 <!--========Navigations=======-->
-    <div class="container">  <!-- page  open-->
-        <div class="navigation">  <!--Navigation  open-->
+    <div class="container">  <!--mulu page ekama open-->
+        <div class="navigation">  <!--Navigation seen open-->
             <ul>
                 <li>
                     <a href="#">
@@ -22,39 +23,52 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#DashboardF" id="DashboardForm">
+                    <a href="#DashboardF" id="DashboardPorm">
                         <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
                         <span class="title">Dashboard</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#CarF" id="CarForm">
+                    <a href="#CarF" id="CarPorm">
                         <span class="icon"><ion-icon name="car-sport-outline"></ion-icon></span>
                         <span class="title">Cars</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#CustomerF" id="CustomerForm">
+                    <a href="#CustomerF" id="CustomerPorm">
                         <span class="icon"><ion-icon name="people-outline"></ion-icon></span>
                         <span class="title">Customers</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#DriverF" id="DriverForm">
+                    <a href="#DriverF" id="DriverPorm">
                         <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
                         <span class="title">Driver</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#CarRentalF" id="CarRentalForm">
+                    <a href="#CarRentalF" id="CarRentalPorm">
                         <span class="icon"><ion-icon name="apps-outline"></ion-icon></span>
                         <span class="title">Car Rentals</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#PaymentF" id="PaymentForm">
+                    <a href="#PaymentF" id="PaymentPorm">
                         <span class="icon"><ion-icon name="cash-outline"></ion-icon></span>
                         <span class="title">Payments</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#RentalRequestF" id="RentalRequestPorm">
+                        <span class="icon"><ion-icon name="git-pull-request-outline"></ion-icon></span>
+                        <span class="title">Rental Requests</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#IncomeReportF" id="IncomeReportPorm">
+                        <span class="icon"><ion-icon name="receipt-outline"></ion-icon></span>
+                        <span class="title">Income Report</span>
                     </a>
                 </li>
 
@@ -157,23 +171,23 @@
             <!--==============Cars page===============================================================-->
             <div class="carBox" id="CarF">  <!--Car  seen open-->
                 <h1 >Car Details</h1>
-                <div class="carDetails">
-
+                <div class="carDetails row p-3">
+                <form id="carForm">
                     <div class="col-2">
                         <div class="mb-3">
-                            <label for="txtRegNo" class="form-label mb-0">Registration Id</label>
-                            <input type="text" class="form-control" id="txtRegNo" name="regNo" placeholder="CAB-4525">
+                            <label class="form-label mb-0">Registration Id</label>
+                            <input type="text" class="form-control" id="txtCarRegId" name="registrationNO" placeholder="ABF-6085">
                         </div>
                     </div>
                     <div class="col-2">
                         <div class="mb-3">
-                            <label for="txtBrand" class="form-label mb-0">Brand</label>
-                            <input type="text" class="form-control" id="txtBrand" name="brand" placeholder="Toyota">
+                            <label class="form-label mb-0">Brand</label>
+                            <input type="text" class="form-control" id="txtCarBrand" name="brand" placeholder="Toyota">
                         </div>
                     </div>
                     <div class="col-2">
-                        <label for="cmbtype" class="form-label mb-0">Type</label>
-                        <select class="form-select" aria-label="Default select example" id="cmbtype" name="type">
+                        <label class="form-label mb-0">Type</label>
+                        <select class="form-select" aria-label="Default select example" id="cmbCartype" name="type">
                             <option selected="">- Select Car Type -</option>
                             <option value="1">General</option>
                             <option value="2">Premium</option>
@@ -182,21 +196,21 @@
                     </div>
                     <div class="col-2">
                         <div class="mb-3">
-                            <label for="txtNoOfPassengers" class="form-label mb-0">No Of Passengers</label>
-                            <input type="text" class="form-control" id="txtNoOfPassengers" name="noOfPassengers">
+                            <label class="form-label mb-0">No Of Passengers</label>
+                            <input type="text" class="form-control" id="txtCarNoOfPassengers" name="passengersCount">
                         </div>
                     </div>
                     <div class="col-2">
-                        <label for="cmbTransmissionType" class="form-label mb-0">Transmission</label>
-                        <select class="form-select" aria-label="Default select example" id="cmbTransmissionType" name="transmission">
+                        <label class="form-label mb-0">Transmission</label>
+                        <select class="form-select" aria-label="Default select example" id="cmbCarTransmissionType" name="transmissionType">
                             <option selected="">- Select Transmission -</option>
                             <option value="1">Manual</option>
                             <option value="2">Auto</option>
                         </select>
                     </div>
                     <div class="col-2">
-                        <label for="cmbfuel" class="form-label mb-0">Fuel</label>
-                        <select class="form-select" aria-label="Default select example" id="cmbfuel" name="fuel">
+                        <label class="form-label mb-0">Fuel</label>
+                        <select class="form-select" aria-label="Default select example" id="cmbCarFuel" name="fuelType">
                             <option selected="">- Select Fuel Type -</option>
                             <option value="1">Petrol</option>
                             <option value="2">Diesel</option>
@@ -204,8 +218,8 @@
                     </div>
                     <div class="col-2">
                         <div class="mb-3">
-                            <label for="cmbColor" class="form-label mb-0">Color</label>
-                            <select class="form-select" aria-label="Default select example" id="cmbColor" name="color">
+                            <label class="form-label mb-0">Color</label>
+                            <select class="form-select" aria-label="Default select example" id="cmbCarColor" name="color">
                                 <option selected="">- Select Color -</option>
                                 <option value="1">Black</option>
                                 <option value="2">White</option>
@@ -216,54 +230,77 @@
                             </select>
                         </div>
                     </div>
+
                     <div class="col-2">
                         <div class="mb-3">
-                            <label for="imgFrontView" class="form-label mb-0">Car Image</label>
-                            <input type="file" class="form-control" id="imgFrontView" name="imgFrontView">
+                            <label class="form-label mb-0">Complete KM</label>
+                            <input type="text" class="form-control" id="txtCarCompleteKM" name="completeKm">
                         </div>
                     </div>
 
                     <div class="col-2">
                         <div class="mb-3">
-                            <label for="txtDailyRate" class="form-label mb-0">Daily Rate (Rs.)</label>
+                            <label class="form-label mb-0">Car Image</label>
+                            <input type="file" class="form-control" id="imgFrontView" name="imgFrontView">
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="mb-3">
+                            <label class="form-label mb-0">Price</label>
+                            <input type="text" class="form-control" id="txtCarPrice" name="price">
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="mb-3">
+                            <label class="form-label mb-0">Status</label>
+                            <input type="text" class="form-control" id="txtCarStatus" name="status">
+                        </div>
+                    </div>
+
+
+                    <!--<div class="col-2">
+                        <div class="mb-3">
+                            <label class="form-label mb-0">Daily Rate (Rs.)</label>
                             <input type="text" class="form-control" id="txtDailyRate" name="dailyRate">
                         </div>
                     </div>
                     <div class="col-2">
                         <div class="mb-3">
-                            <label for="txtFreeKmForPrice" class="form-label mb-0">Free KM For Day</label>
+                            <label class="form-label mb-0">Free KM For Day</label>
                             <input type="text" class="form-control" id="txtFreeKmForPrice" name="freeKmForPrice">
                         </div>
                     </div>
                     <div class="col-2">
                         <div class="mb-3">
-                            <label for="txtMonthlyRate" class="form-label mb-0">Monthly Rate (Rs.)</label>
+                            <label class="form-label mb-0">Monthly Rate (Rs.)</label>
                             <input type="text" class="form-control" id="txtMonthlyRate" name="monthlyRate">
                         </div>
                     </div>
                     <div class="col-2">
                         <div class="mb-3">
-                            <label for="txtFreeKmForMonthPrice" class="form-label mb-0">Free KM For Month</label>
+                            <label class="form-label mb-0">Free KM For Month</label>
                             <input type="text" class="form-control" id="txtFreeKmForMonthPrice" name="freeKmForMonthPrice">
                         </div>
                     </div>
                     <div class="col-2">
                         <div class="mb-3">
-                            <label for="txtPriceForExtraKm" class="form-label mb-0">Price For Extra Km
+                            <label class="form-label mb-0">Price For Extra Km
                                 (Rs.)</label>
                             <input type="text" class="form-control" id="txtPriceForExtraKm" name="priceForExtraKm">
                         </div>
                     </div>
-
+-->
+                </form>
                 </div>
                 <!--Buttons-->
 
                 <div class="carBtn row m-3">
                     <div class="d-grid gap-2 d-md-flex justify-content-md-center">
-                        <button type="button" class="btn btn-success mt-3 " id="saveCar">Save</button>
-                        <button type="button" class="btn btn-danger mt-3" id="delCar" disabled="">Delete</button>
-                        <button type="button" class="btn btn-warning mt-3" id="updateCar" disabled="">Update</button>
-                        <button type="button" class="btn btn-secondary mt-3" id="clearCar">Clear</button>
+                        <button type="button" class="btn btn-success mt-3 " id="btnSaveCar">Save</button>
+                        <button type="button" class="btn btn-danger mt-3" id="btnDeleteCar" >Delete</button>
+                        <button type="button" class="btn btn-warning mt-3" id="btnUpdateCar" >Update</button>
+                        <button type="button" class="btn btn-warning mt-3" id="btnGetAllCar" >Get All</button>
+                        <button type="button" class="btn btn-secondary mt-3" id="btnClearCar">Clear</button>
                     </div>
                 </div>
 
@@ -280,12 +317,11 @@
                             <th>Transmission</th>
                             <th>Fuel</th>
                             <th>Color</th>
-                            <th>Car Image</th>
-                            <th>Daily Rate</th>
-                            <th>Free Km For Day</th>
-                            <th>Monthly Rate</th>
-                            <th>Free Km For Month</th>
-                            <th>Price For Extra Km</th>
+                            <th>Complete KM</th>
+                            <th>Price</th>
+                            <th>Image</th>
+                            <th>Status</th>
+
                         </tr>
                         </thead>
                         <tbody id="carTable"></tbody>
@@ -305,7 +341,7 @@
                 <div class="customerDetails">
                     <div class="col-2">
                         <div class="mb-3">
-                            <label for="txtCustomerId" class="form-label mb-0">Customer ID</label>
+                            <label for="txtCustomerId" class="form-label mb-0">Customer Nic Id</label>
 <!--                            <input type="text" class="form-control" id="txtCustomerId" name="customerId" disabled="">-->
                             <input type="text" class="form-control" id="txtCustomerId" name="customerId" >
                         </div>
@@ -348,147 +384,33 @@
 
                 <!--Buttons-->
                 <div class="customerButtons col-4">
-                    <button type="button" class="btn btn-success mt-3" id="btnAcceptCustomer">Accept
-                    </button>
-                    <button type="button" class="btn btn-danger mt-3" id="btnRejectCustomer">Reject</button>
-                    <button type="button" class="btn btn-secondary mt-3" id="btnClearFields">Clear</button>
-                </div>
-
-
-
-
-<!--///////////////////////////////-->
-<!--
-                <div class="tab-pane fade active show" id="v-tabs-customer" role="tabpanel" aria-labelledby="v-tabs-customer-tab">
-                    <div class="row text-center"><h1 class="h1 display-5">Customer Details</h1></div>
-                    <div class="row ms-0 me-0">
-                        <h3 class="h3  p-2 m-3 bg-success text-white">Customer Details</h3>
-
-                        <div class="col-2">
-                            <div class="mb-3">
-                                <label for="txtCustomerId" class="form-label mb-0">Customer ID</label>
-                                <input type="text" class="form-control" id="txtCustomerId" name="customerId" disabled="">
-                            </div>
-                        </div>
-                        <div class="col-2">
-                            <div class="mb-3">
-                                <label for="txtCustomerName" class="form-label mb-0">Customer Name</label>
-                                <input type="text" class="form-control" id="txtCustomerName" name="customerName" disabled="">
-                            </div>
-                        </div>
-
-                        <div class="col-2">
-                            <div class="mb-3">
-                                <label for="txtCustomerAddress" class="form-label mb-0">Customer Address</label>
-                                <input type="text" class="form-control" id="txtCustomerAddress" name="customerAddress" disabled="">
-                            </div>
-                        </div>
-                        <div class="col-2">
-                            <div class="mb-3">
-                                <label for="txtCustomerContactNo" class="form-label mb-0">Customer Contact</label>
-                                <input type="text" class="form-control" id="txtCustomerContactNo" name="customerContactNo" disabled="">
-                            </div>
-                        </div>
-                        <div class="col-2">
-                            <div class="mb-3">
-                                <label for="txtCustomerEmail" class="form-label mb-0">Customer Email</label>
-                                <input type="text" class="form-control" id="txtCustomerEmail" name="customerEmail" disabled="">
-                            </div>
-                        </div>
-
-                        <div class="col-2">
-                            <div class="mb-3">
-                                <label for="txtCustomerNICNo" class="form-label mb-0">Customer NIC No</label>
-                                <input type="text" class="form-control" id="txtCustomerNICNo" name="customerNICNo" disabled="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row ms-0 me-0">
-                        <div class="col-2">
-                            <div class="mb-3">
-                                <label for="txtCustomerLicenceNo" class="form-label mb-0">Customer Licence
-                                    No</label>
-                                <input type="text" class="form-control" id="txtCustomerLicenceNo" name="customerLicenceNo" disabled="">
-                            </div>
-                        </div>
-                        <div class="col-2">
-                            <label class="form-label mb-0">NIC Front View</label>
-                            <div class="mb-3" id="divNICFrontView" style="height: 13vh; border: #00e5ff 2px solid">
-
-                            </div>
-                        </div>
-                        <div class="col-2">
-                            <label class="form-label mb-0">NIC Back View</label>
-                            <div class="mb-3" id="divNICBackView" style="height: 13vh; border: #00e5ff 2px solid">
-
-                            </div>
-                        </div>
-                        <div class="col-2">
-                            <label class="form-label mb-0">Licence Img</label>
-                            <div class="mb-3" id="divLicenceImg" style="height: 13vh; border: #00e5ff 2px solid">
-
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <button type="button" class="btn btn-success mt-3" id="btnAcceptCustomer">Accept
-                            </button>
-                            <button type="button" class="btn btn-danger mt-3" id="btnRejectCustomer">Reject</button>
-                            <button type="button" class="btn btn-secondary mt-3" id="btnClearFields">Clear</button>
-                        </div>
-                    </div>
-                    <div class="row ms-0 me-0">
-                        <h3 class="h3  p-2 bg-success text-white">Pending Customers</h3>
-                    </div>
-                    <div class="bg-light row overflow-scroll" style="height: 20vh">
-                        <table class="table table-hover table-bordered table-striped" id="pendingCustomerTbl">
-                            <thead class="bg-info">
-                            <tr>
-                                <th>Customer ID</th>
-                                <th>Name</th>
-                                <th>Address</th>
-                                <th>Contact No</th>
-                                <th>Email</th>
-                                <th>NIC No</th>
-                                <th>Licence No</th>
-                                <th>Status</th>
-                            </tr>
-                            </thead>
-                            <tbody id="tblPendingCustomers"></tbody>
-                        </table>
-                    </div>
-                    <div class="row ms-0 me-0">
-                        <h3 class="h3  p-2 bg-success text-white">Registered Customers</h3>
-                    </div>
-                    <div class="row ml-0 mr-0 mt-2 mb-2 align-content-end ">
-                        <div class="input-group d-flex align-items-center justify-content-center">
-                            <div class="col-2">
-                                <input type="text" id="searchCustomer" class="form-control" placeholder="Search">
-                            </div>
-                            <button type="button" class="btn btn-primary" id="btnSearchCustomer">
-                                <i class="fas fa-search"></i>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="bg-light row overflow-scroll" style="height: 27vh">
-                        <table class="table table-hover table-bordered table-striped" id="registeredCustomerTbl">
-                            <thead class="bg-info">
-                            <tr>
-                                <th>Customer ID</th>
-                                <th>Name</th>
-                                <th>Address</th>
-                                <th>Contact No</th>
-                                <th>Email</th>
-                                <th>NIC No</th>
-                                <th>Licence No</th>
-                                <th>Status</th>
-                            </tr>
-                            </thead>
-                            <tbody id="tblRegisteredCustomers"></tbody>
-                        </table>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                        <button type="button" class="btn btn-success mt-3" id="btnAcceptCustomer">Accept</button>
+                        <button type="button" class="btn btn-danger mt-3" id="btnRejectCustomer">Reject</button>
+                        <button type="button" class="btn btn-secondary mt-3" id="btnClearFields">Clear</button>
                     </div>
                 </div>
--->
-<!--///////////////////////////////-->
+
+                <!--===Customer Table====-->
+                <!--<div class="row ms-0 me-0">
+                    <h3 class="h3  p-2 bg-success text-white">Pending Customers</h3>
+                </div>-->
+<!--                <div class="bg-light row overflow-scroll" style="height: 20vh">-->
+                <div class="customerTable bg-light row overflow-scroll" >
+                    <table class="table table-hover table-bordered table-striped" id="pendingCustomerTbl">
+                        <thead class="bg-info">
+                        <tr>
+                            <th>Customer Nic Id</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Tell</th>
+                            <th>NIC Front View</th>
+                            <th>NIC Back View</th>
+                        </tr>
+                        </thead>
+                        <tbody id="tblPendingCustomers"></tbody>
+                    </table>
+                </div>
 
             </div> <!--Customer  seen over-->
             <!--==============Customer Page Over===============================================================-->
@@ -496,118 +418,366 @@
             <!--===============================================================================================-->
             <!--==============Driver Page Open===============================================================-->
             <div class="driverBox" id="DriverF">  <!--Driver  seen open-->
-
+                <h1 >Driver Details</h1>
                 <div class="driverDetails">
-                    <h1 >Hello Driver Page</h1>
+                    <form id="driverForm">
+                        <div class="col-3">
+                            <div class="col-3">
+                                <div class="mb-3">
+                                    <label class="form-label mb-0">Licence No</label>
+                                    <input type="text" class="form-control" id="txtLicenceNo" name="licenceNo" placeholder="Eg:- B1234567">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="mb-3">
+                                <label class="form-label mb-0">NIC No</label>
+                                <input type="text" class="form-control" id="txtDriverNICNo" name="nic" placeholder="Eg:- 992200863">
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="mb-3">
+                                <label class="form-label mb-0">Full Name</label>
+                                <input type="text" class="form-control" id="txtDriverName" name="name" placeholder="Eg:- Nimal Bandara">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="col-3">
+                            <div class="mb-3">
+                                <label class="form-label mb-0">Address</label>
+                                <input type="text" class="form-control" id="txtDriverAddress" name="address" placeholder="Eg:- Ambalangoda,Galle Road">
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="mb-3">
+                                <label class="form-label mb-0">Contact No</label>
+                                <input type="text" class="form-control" id="txtDriverContactNo" name="contactNo" placeholder="Eg:- 0765401908">
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="mb-3">
+                                <label class="form-label mb-0">User Name</label>
+                                <input type="text" class="form-control" id="txtDriverUserName" name="username" placeholder="Eg:- Nimal">
+                            </div>
+                        </div>
+
+                        <div class="col-4">
+                            <div class="mb-3">
+                                <label class="form-label mb-0">Password</label>
+                                <input type="password" class="form-control" id="txtDriverPassword" name="password">
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="mb-3">
+                                <label class="form-label mb-0">Availability</label>
+                                <input type="text" class="form-control" id="txtDriverAvailability" name="availability">
+                            </div>
+                        </div>
+                    </form>
+
+<!--                        <br>-->
+
+                       <!-- <div class="col-2">
+                            <label class="form-label mb-0">Driver Licence Img</label>
+                            <div class="mb-3" id="driverLicenceImg" style="height: 13vh; border: #00e5ff 2px solid">
+
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <label class="form-label mb-0">Driver NIC Img</label>
+                            <div class="mb-3" id="driverNicImg" style="height: 13vh; border: #00e5ff 2px solid">
+
+                            </div>
+                        </div>
+                        -->
+
                 </div>
 
+                <!--Buttons-->
+                <div class="driverButtons row m-3">
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                        <button class="btn btn-success mt-3 " type="button" id="btnSaveDriver">Save</button>
+                        <!--<button type="button" class="btn btn-danger mt-3" id="btnDeleteDriver" disabled="">Delete</button>
+                        <button type="button" class="btn btn-primary mt-3" id="btnUpdateDriver" disabled="">Update</button>
+                        <button type="button" class="btn btn-warning mt-3" id="btnGetAllDriver" disabled="">Get All</button>-->
+                        <button type="button" class="btn btn-danger mt-3" id="btnDeleteDriver">Delete</button>
+                        <button type="button" class="btn btn-primary mt-3" id="btnUpdateDriver">Update</button>
+                        <button type="button" class="btn btn-warning mt-3" id="btnGetAllDriver">Get All</button>
+                        <button type="button" class="btn btn-secondary mt-3" id="btnClearDriver">Clear</button>
+                    </div>
+                </div>
 
+                <!--Driver Tables-->
+                <div class="row ms-0 me-0">
+                    <h3 class="h3  p-2 bg-success text-white">Registered Drivers</h3>
+                </div>
 
+<!--                <div class="bg-light row overflow-scroll" style="height: 27vh">-->
+                <div class="driverTable bg-light row overflow-scroll">
+                    <table class="table table-hover table-bordered table-striped" id="registeredDriversTbl">
+                        <thead class="bg-info">
+                        <tr>
+                            <th>Licence No</th>
+                            <th>NIC No</th>
+                            <th>Full Name</th>
+                            <th>Address</th>
+                            <th>Contact No</th>
+                            <th>User Name</th>
+                            <th>Password</th>
+                            <th>Availability</th>
+                        </tr>
+                        </thead>
+                        <tbody id="tblRegisteredDrivers"></tbody>
+                    </table>
+                </div>
             </div> <!--Driver  seen over-->
             <!--==============Driver Page Over===============================================================-->
 
             <!--===============================================================================================-->
             <!--==============Car Rental Page Open===============================================================-->
             <div class="carRentalBox" id="CarRentalF">  <!--Car Rental Rental  seen open-->
+                <h1 >Car Rental</h1>
 
-                <div class="carRentalDetails">
-                    <h1 >Hello Car Rental Page</h1>
-                </div>
-
-
-
+<!--                    <div class="bg-light row overflow-scroll" style="height: 75vh">-->
+                    <div class="carRentalTable bg-light row overflow-scroll">
+                        <table class="table table-hover table-bordered table-striped" id="carRentalsTbl">
+                            <thead class="bg-info">
+                            <tr>
+                                <th>Car Rent ID</th>
+                                <th>Customer ID</th>
+                                <th>Driver ID</th>
+                                <th>Registration ID</th>
+                                <th>Start Date</th>
+                                <th>End Date</th>
+                            </tr>
+                            </thead>
+                            <tbody id="tblCarRentals"></tbody>
+                        </table>
+                    </div>
             </div> <!--Car Rental  seen over-->
             <!--==============Car Rental Page Over===============================================================-->
+
 
             <!--===============================================================================================-->
             <!--==============Payments Page Open===============================================================-->
             <div class="paymentBox" id="PaymentF">  <!--Payments  seen open-->
-
+                <h1 >Payments</h1>
                 <div class="paymentsDetails">
-                    <h1 >Hello Payments Page</h1>
+                    <div class="row m-3">
+                        <div class="paymentBtnDates d-grid gap-2 d-md-flex justify-content-md-center">
+
+                                    <label for="pickFromDate" class="form-label" style="font-size: 20px; color: black">From</label>
+                                    <input type="date" id="pickFromDate" class="form-control" name="fromDate" placeholder="Start Date">
+
+
+                                    <label for="pickFromDate" class="form-label" style="font-size: 20px; color: black">To</label>
+                                    <input type="date" id="pickToDate" class="form-control" name="toDate" placeholder="End Date">
+
+                            <div class="btnOfPayments">
+                                <button type="button" class="btnSearchPayment btn-primary mt-3" style="height: 50px;width: 100px; border-radius: 20px;" id="btnSearchPayment">Search</button>
+                                <button type="button" class="btnClearPayment btn-warning mt-3 ms-2" style="height: 50px;width: 100px; border-radius: 20px;" id="btnClearDates">Clear</button>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
 
-
-
+                <!--<div class="bg-light row overflow-scroll" style="height: 65vh">-->
+                <div class="paymentTable bg-light row overflow-scroll">
+                    <table class="table table-hover table-bordered table-striped" id="paymentsTbl">
+                        <thead class="bg-info">
+                        <tr>
+                            <th>Payment ID</th>
+                            <th>Date</th>
+                            <th>Amount (Rs.)</th>
+                            <th>Rent ID</th>
+                            <th>Customer ID</th>
+                        </tr>
+                        </thead>
+                        <tbody id="tblPayments"></tbody>
+                    </table>
+                </div>
             </div> <!--Payments  seen over-->
             <!--==============Payments Page Over===============================================================-->
+
+
+
+            <!--==============Rental Request Page Open===============================================================-->
+            <div class="rentalRequestBox" id="RentalRequestF">   <!--RentalRequest  seen open-->
+                <h1 >Rental Request</h1>
+                <div class="rentalRequestDetails">
+
+                    <div class="col-3">
+                        <div class="mb-3">
+                            <label for="txtRentId" class="form-label mb-0">Rent ID</label>
+                            <input type="text" class="form-control" id="txtRentId" name="rentId" disabled="">
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="mb-3">
+                            <label for="txtDate" class="form-label mb-0">Date</label>
+                            <input type="text" class="form-control" id="txtDate" name="date" disabled="">
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="mb-3">
+                            <label for="txtPickupDate" class="form-label mb-0">Pickup Date</label>
+                            <input type="text" class="form-control" id="txtPickupDate" name="pickupDate" disabled="">
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="mb-3">
+                            <label for="txtReturnDate" class="form-label mb-0">Return Date</label>
+                            <input type="text" class="form-control" id="txtReturnDate" name="returnDate" disabled="">
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="mb-3">
+                            <label for="txtCarRegistrationNo" class="form-label mb-0">Car Registration
+                                No</label>
+                            <input type="text" class="form-control" id="txtCarRegistrationNo" name="regNo" disabled="">
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="mb-3">
+                            <label for="txtCusId" class="form-label mb-0">Customer ID</label>
+                            <input type="text" class="form-control" id="txtCusId" name="cusId" disabled="">
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="mb-3">
+                            <label for="txtDLicenceNo" class="form-label mb-0">Driver Licence No</label>
+                            <input type="text" class="form-control" id="txtDLicenceNo" name="dLicenceNo" disabled="">
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="mb-3">
+                            <label for="txtRentalStatus" class="form-label mb-0">Status</label>
+                            <input type="text" class="form-control" id="txtRentalStatus" name="rentalStatus" disabled="">
+                        </div>
+                    </div>
+
+                </div>
+
+                <!--Buttons-->
+                <div class="btnRentalRequest row m-3">
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                        <button type="button" class="btn btn-success mt-3 " id="btnRentalAccept">Accept</button>
+                        <button type="button" class="btn btn-danger mt-3" id="btnRentalReject">Reject</button>
+                        <button type="button" class="btn btn-secondary mt-3" id="btnClearRental">Clear</button>
+                    </div>
+                </div>
+
+                <!--Search-->
+             <!--   <div class="rentalRequestSearch row ml-0 mr-0 mt-2 mb-2 align-content-end ">
+                    <div class="input-group d-flex align-items-center justify-content-center">
+                        <div class="col-2">
+                            <input type="text" id="searchRentalRequest" class="form-control" placeholder="Search">
+                        </div>
+                        <button type="button" class="btn btn-primary ripple-surface" id="btnSearchRentalRequest">
+                            Search
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>-->
+                <!--====-->
+
+<!--                <div class="bg-light row overflow-scroll" style="height: 45vh">-->
+                <div class="rentalRequestTable bg-light row overflow-scroll">
+                    <table class="table table-hover table-bordered table-striped" id="carRentalRequestTbl">
+                        <thead class="bg-info">
+                        <tr>
+                            <th>Rent ID</th>
+                            <th>Date</th>
+                            <th>Pickup Date</th>
+                            <th>Return Date</th>
+                            <th>Car Registration No</th>
+                            <th>Customer ID</th>
+                            <th>Driver Licence No</th>
+                            <th>Status</th>
+                        </tr>
+                        </thead>
+                        <tbody id="tblCarRentalRequests"></tbody>
+                    </table>
+                </div>
+
+            </div>
+            <!--==============Rental Request Page Over===============================================================-->
+
+
+
+            <!--==============Income Report  Page Open===============================================================-->
+            <div class="incomeReportBox" id="IncomeReportF">   <!--RentalRequest  seen open-->
+                <h1 >Income Report</h1>
+
+                    <div class="forInBox" >
+
+                        <div class="incomeTab">
+                            <div>
+                                <div class="incomeName">Daily Income</div>
+                            </div>
+                        </div>
+                        <div class="incomeTab">
+                            <div>
+                                <div class="incomeName">Weekly Income</div>
+                            </div>
+                        </div>
+
+
+                        <div class="incomeTab">
+                            <div>
+                                <div class="incomeName">Monthly Income</div>
+                            </div>
+                        </div>
+
+                        <div class="incomeTab">
+                            <div>
+                                <div class="incomeName">Yearly Income</div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+
+            </div>
+            <!--==============Rental Request Page Over===============================================================-->
+
+
+
 
 
         </div> <!--mulu main eka over-->
 
     </div> <!--mulu page ekama over-->
 
-<!-- ====== Scripts ======= -->
-    <script src="assests/scripts/AdminDashboard.js"></script>
+
+<script src="assests/js/bootstrap.js"></script>
+<!--<script src="assests/js/jquery-3.6.0.min.js"></script>-->
+<script src="assests/js/jquery-3.7.0.min.js"></script>
+
+<!--<script src="controllers/Admin/DriverController.js"></script>-->
+<script src="../FrontEnd/controllers/Admin/DriverController.js"></script>
+<script src="models/Admin/DriverModel.js"></script>
+
+<!--Car-->
+<script src="../FrontEnd/controllers/Admin/CarController.js"></script>
+<script src="models/Admin/CarModel.js"></script>
+
+
 
     <!-- ====== ionicons ======= -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-<!--<script src="assests/js/bootstrap.js"></script>-->
-<!--<script src="assests/js/jquery-3.6.0.min.js"></script>-->
 
 
-<!--<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        document.getElementById("DashboardF").style.display = 'inline-block';
-        document.getElementById("CarF").style.display = 'none';
-        document.getElementById("CustomerF").style.display = 'none';
-        document.getElementById("DriverF").style.display = 'none';
-        document.getElementById("CarRentalF").style.display = 'none';
-        document.getElementById("PaymentF").style.display = 'none';
-    });
+<!-- ====== Scripts ======= -->
+<script src="assests/scripts/AdminDashboard.js"></script>
+<!--Driver_Controller_AND_Model-->
 
-    document.getElementById("DashboardForm").addEventListener('click', function () {
-        document.getElementById("DashboardF").style.display = 'inline-block';
-        document.getElementById("CarF").style.display = 'none';
-        document.getElementById("CustomerF").style.display = 'none';
-        document.getElementById("DriverF").style.display = 'none';
-        document.getElementById("CarRentalF").style.display = 'none';
-        document.getElementById("PaymentF").style.display = 'none';
-    });
 
-    document.getElementById("CarForm").addEventListener('click', function () {
-        document.getElementById("DashboardF").style.display = 'none';
-        document.getElementById("CarF").style.display = 'inline-block';
-        document.getElementById("CustomerF").style.display = 'none';
-        document.getElementById("DriverF").style.display = 'none';
-        document.getElementById("CarRentalF").style.display = 'none';
-        document.getElementById("PaymentF").style.display = 'none';
-    });
-    document.getElementById("CustomerForm").addEventListener('click', function () {
-        document.getElementById("DashboardF").style.display = 'none';
-        document.getElementById("CarF").style.display = 'none';
-        document.getElementById("CustomerF").style.display = 'inline-block';
-        document.getElementById("DriverF").style.display = 'none';
-        document.getElementById("CarRentalF").style.display = 'none';
-        document.getElementById("PaymentF").style.display = 'none';
-    });
-    document.getElementById("DriverForm").addEventListener('click', function () {
-        document.getElementById("DashboardF").style.display = 'none';
-        document.getElementById("CarF").style.display = 'none';
-        document.getElementById("CustomerF").style.display = 'none';
-        document.getElementById("DriverF").style.display = 'inline-block';
-        document.getElementById("CarRentalF").style.display = 'none';
-        document.getElementById("PaymentF").style.display = 'none';
-    });
-    document.getElementById("CarRentalForm").addEventListener('click', function () {
-        document.getElementById("DashboardF").style.display = 'none';
-        document.getElementById("CarF").style.display = 'none';
-        document.getElementById("CustomerF").style.display = 'none';
-        document.getElementById("DriverF").style.display = 'none';
-        document.getElementById("CarRentalF").style.display = 'inline-block';
-        document.getElementById("PaymentF").style.display = 'none';
-    });
-    document.getElementById("PaymentForm").addEventListener('click', function () {
-        document.getElementById("DashboardF").style.display = 'none';
-        document.getElementById("CarF").style.display = 'none';
-        document.getElementById("CustomerF").style.display = 'none';
-        document.getElementById("DriverF").style.display = 'none';
-        document.getElementById("CarRentalF").style.display = 'none';
-        document.getElementById("PaymentF").style.display = 'inline-block';
-    });
 
-</script>-->
 </body>
 </html>
