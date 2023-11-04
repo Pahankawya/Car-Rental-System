@@ -1,28 +1,23 @@
-package lk.ijse.spring.entity;
+package lk.ijse.spring.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
+import org.springframework.web.multipart.MultipartFile;
 
-import javax.persistence.CascadeType;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.OneToOne;
-
-@Entity
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
 @ToString
-public class Admin {
-    @Id
+public class DriverDTO {
     private String nic;
-    private String name;
     private String license;
+    private String name;
     private String address;
     private String contact;
     private String email;
-    @OneToOne(cascade = CascadeType.ALL)
-    private User user;
+    private String availabilityStatus;
+    private UserDTO user;
+    private MultipartFile licenseImage;
 }

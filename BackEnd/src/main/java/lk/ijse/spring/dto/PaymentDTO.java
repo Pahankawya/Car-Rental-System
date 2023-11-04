@@ -1,28 +1,21 @@
-package lk.ijse.spring.entity;
+package lk.ijse.spring.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
-import javax.persistence.*;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
-
-@Entity
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
 @ToString
-public class Payment {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+public class PaymentDTO {
     Integer paymentId;
-    @ManyToOne(cascade = {CascadeType.REFRESH, CascadeType.DETACH})
-    @JoinColumn(name = "rentId",referencedColumnName = "rentId", nullable = false)
-    Rent rentId;
+    RentDTO rentId;
     String type;
     String description;
     LocalDate date;
